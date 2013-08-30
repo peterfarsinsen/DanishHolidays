@@ -3,21 +3,25 @@ DanishHolidays
 
 Simple class to generate a list of danish holidays.
 
+```
 $holidayList = new DanishHolidayList('2013');
 $holidays = $holidayList->getHolidays();
 
 foreach($holidays as $holiday) {
 	...
 }
+```
 
 Includes a few special days such as new years eve, may 1st etc. that has a special status in Denmark. Some people have these days off and some dont. Include them in the list by passing true as the second param to the constructor.
 
+```
 $holidayList = new DanishHolidayList('2013', true);
 $holidays = $holidayList->getHolidays();
 
 foreach($holidays as $holiday) {
 	...
 }
+```
 
 # License
 
