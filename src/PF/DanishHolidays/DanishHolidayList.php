@@ -10,8 +10,8 @@ class DanishHolidayList
     public function __construct($year = null, $includeSpecialDays = false)
     {
         $this->year = $year;
-        $this->init();
         $this->includeSpecialDays = $includeSpecialDays;
+        $this->init();
     }
 
     public function getHolidays()
